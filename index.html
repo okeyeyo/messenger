@@ -9,13 +9,13 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>Okssenger</span>
+        <span class="status-bar__title">Okssenger</span>
       </div>
       <div class="status-bar__column">
-        <span class="clock"></span>
+        <div class="status-bar__clock"></div>
       </div>
       <div class="status-bar__column">
-        <span class="battery"></span>
+        <span class="status-bar__battery"></span>
       </div>
     </div>
 
@@ -35,8 +35,19 @@
         placeholder="이메일 혹은 전화번호"
         required
       />
-      <input name="password" class="login-form__input type="password"
-      placeholder="비밀번호" required/>
+      <input
+        name="password"
+        class="login-form__input"
+        type="password"
+        placeholder="비밀번호"
+        required
+      />
+      <div class="login-form__password">
+        <i
+          class="fa-solid fa-eye toggle-password"
+          onclick="togglePassword()"
+        ></i>
+      </div>
       <input class="login-form__btn" type="submit" value="로그인" />
       <a class="login-form__a" href="#">계정 혹은 비밀번호 찾기</a>
     </form>
@@ -45,11 +56,12 @@
       <span>스크린이 너무 큽니다.</span>
     </div>
 
-    <script src="./javascript/clock.js"></script>
-    <script src="./javascript/battery.js"></script>
     <script
       src="https://kit.fontawesome.com/ea01b2e99c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./javascript/clock.js"></script>
+    <script src="./javascript/battery.js"></script>
+    <script src="./javascript/togglePassword.js"></script>
   </body>
 </html>
