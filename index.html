@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <!--야간모드 토글 넣기 일정 시간 되면 밝은 모드 어두운 모드로 하고 자신이 원하면 다시 바꿀 수 있게 화면에 구현-->
   <head>
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
@@ -23,7 +22,7 @@
     <header class="welcom-header">
       <h1 class="welcom-header__title">환영합니다</h1>
       <p class="welcom-header__text">
-        계정이 있으시다면 이메일 혹은 전화번호를 입력하여 로그인해주세요
+        이메일 혹은 전화번호를 입력하여 로그인해주세요
       </p>
     </header>
 
@@ -34,9 +33,10 @@
         class="login-form__input"
         type="text"
         placeholder="이메일 혹은 전화번호"
+        required
       />
       <input name="password" class="login-form__input type="password"
-      placeholder="비밀번호" />
+      placeholder="비밀번호" required/>
       <input class="login-form__btn" type="submit" value="로그인" />
       <a class="login-form__a" href="#">계정 혹은 비밀번호 찾기</a>
     </form>
