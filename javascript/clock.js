@@ -7,6 +7,10 @@ function clock() {
   var timeString = `${hours}:${minutes}`;
   document.getElementsByClassName("status-bar__clock")[0].textContent =
     timeString;
+
+  var hour = `${hours}`;
+  document.getElementsByClassName("current-time")[0].textContent =
+    hour + "시 기준,";
 }
 
 setInterval(clock, 1000);
