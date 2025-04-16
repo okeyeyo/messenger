@@ -19,39 +19,44 @@
       </div>
     </div>
 
-    <header class="welcom-header">
-      <h1 class="welcom-header__title">환영합니다</h1>
-      <p class="welcom-header__text">
-        이메일 혹은 전화번호를 입력하여 로그인해주세요
-      </p>
-    </header>
+    <div id="main-content">
+      <header class="welcom-header">
+        <h1 class="welcom-header__title">환영합니다</h1>
+        <p class="welcom-header__text">
+          이메일 혹은 전화번호를 입력하여 로그인해주세요
+        </p>
+      </header>
 
-    <form action="friends.html" method="get" class="login-form">
-      <!-- get은 보안상 문제가 될 수 있기 때문에 url에 전송하기에 괜찮은 것에만 get을 넣기  서버에 보내고 싶을 경우 post 방식을 사용 ex) 검색창 -->
-      <input
-        name="username"
-        class="login-form__input"
-        type="text"
-        placeholder="이메일 혹은 전화번호"
-        required
-      />
-      <input
-        name="password"
-        class="login-form__input"
-        type="password"
-        placeholder="비밀번호"
-        
-        required
-      />
-      <div class="login-form__password">
-        <i
-          class="fa-solid fa-eye toggle-password"
-          onclick="togglePassword()"
-        ></i>
-      </div>
-      <input class="login-form__btn" type="submit" value="로그인" />
-      <a class="login-form__a" href="#">계정 혹은 비밀번호 찾기</a>
-    </form>
+      <form action="friends.html" method="get" class="login-form">
+        <!-- get은 보안상 문제가 될 수 있기 때문에 url에 전송하기에 괜찮은 것에만 get을 넣기  서버에 보내고 싶을 경우 post 방식을 사용 ex) 검색창 -->
+        <input
+          name="username"
+          class="login-form__input"
+          type="text"
+          placeholder="이메일 혹은 전화번호"
+          required
+        />
+        <input
+          name="password"
+          class="login-form__input"
+          type="password"
+          placeholder="비밀번호"
+          required
+        />
+        <div class="login-form__password">
+          <i
+            class="fa-solid fa-eye toggle-password"
+            onclick="togglePassword()"
+          ></i>
+        </div>
+        <input class="login-form__btn" type="submit" value="로그인" />
+        <a class="login-form__a" href="#">계정 혹은 비밀번호 찾기</a>
+      </form>
+    </div>
+
+    <div id="loading-screen">
+      <i class="fas fa-comment"></i>
+    </div>
 
     <div id="no-mobile">
       <span>스크린이 너무 큽니다.</span>
@@ -64,5 +69,6 @@
     <script src="./javascript/clock.js"></script>
     <script src="./javascript/battery.js"></script>
     <script src="./javascript/togglePassword.js"></script>
+    <script src="./javascript/loading.js"></script>
   </body>
 </html>
