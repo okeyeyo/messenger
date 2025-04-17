@@ -23,7 +23,7 @@ body {
   color: #5e3317;
   font-family: "Jua", sans-serif;
   font-style: normal;
-  background-color: var(--background-color);
+  height: 100vh;
 }
 
 .main-screen {
