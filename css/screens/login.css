@@ -41,7 +41,7 @@ body {
 
 .login-form__input {
   background-color: #f4e7d4;
-  padding: 12px;
+  padding: 14px;
   border-radius: 10px;
   margin-bottom: 6px;
 }
@@ -52,7 +52,8 @@ body {
 }
 
 .login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: #a58164;
+  font-size: 15px;
 }
 
 .login-form input:focus {
@@ -61,25 +62,29 @@ body {
 
 .login-form__btn {
   background-color: var(--basic-color);
+  color: white;
   cursor: pointer;
+  margin-top: 15px;
   padding: 20px 0px;
-  border-radius: 5px;
+  border-radius: 15px;
   border: none;
   margin-bottom: 25px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .login-form__a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: var(--basic-color);
+  gap: 40px;
+  margin-top: 15px;
 }
 
 .login-form__password {
   position: absolute;
-  right: 6px;
+  right: 10px;
   top: 60px;
-  color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
