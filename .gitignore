@@ -1,1 +1,43 @@
 .DS_Store
+# Node modules (대용량)
+node_modules/
+
+# 로그 파일
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 환경 변수 파일
+.env
+.env.local
+.env.*.local
+
+# 빌드 결과물
+dist/
+build/
+
+# 테스트 커버리지 리포트
+coverage/
+
+# 운영체제별 파일
+.DS_Store
+Thumbs.db
+
+# IDE / 에디터 설정
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# 데이터베이스, 스토리지 덤프 (필요 없다면)
+*.sqlite
+*.db
+dump/
+
+# 기타 캐시
+.cache/
+*.bak
